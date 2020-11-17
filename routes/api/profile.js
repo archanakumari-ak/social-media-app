@@ -65,7 +65,7 @@ router.post('/',[auth,[
     }
 
     // Build social object
-    profileFields.social = {}
+    profileFields.social = {};
     if(youtube) profileFields.social.youtube = youtube;
     if(facebook) profileFields.social.facebook = facebook;
     if(twitter) profileFields.social.twitter = twitter;
@@ -74,7 +74,7 @@ router.post('/',[auth,[
 
     try {
 
-        let profile = Profile.findOne({ user: req.user.id });
+        let profile = await Profile.findOne({ user: req.user.id });
 
         if(profile){
             // Update 
