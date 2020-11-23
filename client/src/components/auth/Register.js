@@ -39,8 +39,8 @@ const Register = ({ setAlert, register }) => {
             placeholder='Name'
             name='name'
             value={name}
-            onChange={(e) => onChange(e)}
-            required
+            onChange={onChange}
+            /* required */
           />
         </div>
         <div className='form-group'>
@@ -49,8 +49,8 @@ const Register = ({ setAlert, register }) => {
             placeholder='Email Address'
             name='email'
             value={email}
-            onChange={(e) => onChange(e)}
-            required
+            onChange={onChange}
+            /* required */
           />
           <small className='form-text'>
             This site uses Gravatar so if you want a profile image, use a
@@ -63,8 +63,8 @@ const Register = ({ setAlert, register }) => {
             placeholder='Password'
             name='password'
             value={password}
-            onChange={(e) => onChange(e)}
-            minLength='6'
+            onChange={onChange}
+            /* minLength='6' */
           />
         </div>
         <div className='form-group'>
@@ -73,8 +73,8 @@ const Register = ({ setAlert, register }) => {
             placeholder='Confirm Password'
             name='password2'
             value={password2}
-            onChange={(e) => onChange(e)}
-            minLength='6'
+            onChange={onChange}
+            /* minLength='6' */
           />
         </div>
         <input type='submit' className='btn btn-primary' value='Register' />

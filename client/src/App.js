@@ -7,9 +7,9 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 
 // Redux
-import { Provider } from 'react-redux';
+import { Provider } from "react-redux";
 import store from "./store";
-import Alert from './components/layout/Alert';
+import Alert from "./components/layout/Alert";
 
 const App = () => (
   <Provider store={store}>
@@ -18,8 +18,8 @@ const App = () => (
         <Navbar />
         <Route exact path='/' component={Landing} />
         <section className='container'>
-          <Alert/>
-          <Route exact path='/register' component={Register} />
+          <Alert />
+          <Route exact path='/register' component={ Register} />
           <Route exact path='/login' component={Login} />
         </section>
       </Fragment>
