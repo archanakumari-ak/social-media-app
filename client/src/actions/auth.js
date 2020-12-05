@@ -8,7 +8,7 @@ import {
   LOGIN_SUCCESS,
   LOGIN_FAIL,
   LOGOUT,
-  CLEAR_PROFILE
+  CLEAR_PROFILE,
 } from "./types";
 import setAuthToken from "../utils/setAuthToken";
 
@@ -33,7 +33,7 @@ export const loadUser = () => async (dispatch) => {
 };
 
 // Register User
-export const register = formData => async (dispatch) => {
+export const register = (formData) => async (dispatch) => {
   /* const config = {
     header: {
       "Content-Type": "application/json",
